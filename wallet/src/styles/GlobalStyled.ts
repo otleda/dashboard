@@ -6,12 +6,21 @@ export default createGlobalStyle `
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        background-color: violet;
     }
 
     html, body, #root {
         height: 100%;
-        background: #00ffc3;
-    }  
+        font-family: 'Roboto', sans-serif;
+    }
 
+    button, input {
+        border: none;
+        outline: none;
+    }
+
+    button  {
+        cursor: pointer;
+    }
     
-`;
+`

@@ -1,17 +1,18 @@
 import React from 'react';
 import GlobalStyled from './styles/GlobalStyled';
 
-import Dashboard from './pages/Dashboard';
+import Layout from './components/Layout';
 
 const App: React.FC = () => {
     
     return (
         <>
-            < GlobalStyled />
-            < Dashboard />
+            <GlobalStyled />
+            <Layout />
         </>
     );
-
 }
 
 export default App;
+
+

@@ -14,7 +14,10 @@ declare module 'styled-components' {
 
          success: string;
          info: string;
-         warning: string;  
+         warning: string;
+         
+         onCheked: string;
+         offCheked: string;
     },
     }
 }

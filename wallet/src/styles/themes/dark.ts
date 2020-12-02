@@ -6,12 +6,15 @@ export default {
          secondary: '#252A4B',
          tertiary: '#313862',
 
-         white: '#fff',
+         white: '#E9E9E9',
          black: '#000',
          gray: '#b5b5b5',
 
          success: '#4E41F0',
          info: '#F7931B',
          warning: '#E44C4E', 
-    },
+
+         onCheked: '#F00407',
+         offCheked: '#33F815',
+        },
 };

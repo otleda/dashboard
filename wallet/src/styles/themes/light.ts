@@ -13,5 +13,8 @@ export default {
          success: '#03BB85',
          info: '#FFBB68',
          warning: '#FF8081', 
+         
+         onCheked: '#F00407',
+         offCheked: '#33F815',
     },
 };

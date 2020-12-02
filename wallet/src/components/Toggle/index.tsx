@@ -1,9 +1,9 @@
 import React from 'react';
-import  Switch from 'react-switch';
 
 import { 
     Container, 
-    ToggleLabel 
+    ToggleLabel,
+    ToggleSelector 
 } from './styles';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -11,8 +11,10 @@ const Toggle: React.FC = () => {
     return (
         <Container>
             <ToggleLabel>light</ToggleLabel>
-            <Switch 
+            <ToggleSelector
                 checked
+                uncheckedIcon = {false}
+                checkedIcon = {false}
                 onChange = {()=>{}}
             />
             <ToggleLabel>dark</ToggleLabel>

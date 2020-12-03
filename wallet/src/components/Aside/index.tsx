@@ -1,12 +1,19 @@
 import React from 'react';
-import { Container } from './styles';
+import LogoSvg from '../../assets/logo.svg';
+
+import { 
+    Container, 
+    Header,
+    LogoImg
+} from './styles';
 
 const Aside: React.FC = () => {
-    return(
+    return (
         <Container>
-            Aside
+            <Header>
+               <LogoImg src = {LogoSvg}/>
+            </Header>
         </Container>
     );
 }
-
 export default Aside;

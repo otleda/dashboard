@@ -1,6 +1,14 @@
 import React from 'react';
 import LogoSvg from '../../assets/logo.svg';
 
+import {
+    MdDashboard,
+    MdAccountBalanceWallet,
+    MdArrowUpward,
+    MdArrowDownward,
+    MdInput,
+} from 'react-icons/md';
+
 import { 
     Container, 
     Header,
@@ -19,19 +27,23 @@ const Aside: React.FC = () => {
 
             <MenuContainer>
                 <MenuLink href="#">
-                    Dashboard
+                    <MdDashboard /> Dashboard
                 </MenuLink>
+
                 <MenuLink href="#">
-                    New Register
+                     <MdAccountBalanceWallet /> New Register
                 </MenuLink>
+
                 <MenuLink href="#">
-                    Entries
+                     <MdArrowUpward /> Entries
                 </MenuLink>
+
                 <MenuLink href="#">
-                    Exits
+                     <MdArrowDownward /> Exits
                 </MenuLink>
+
                 <MenuLink href="#">
-                    Quit
+                     <MdInput /> Quit
                 </MenuLink>
             </MenuContainer>
         </Container>

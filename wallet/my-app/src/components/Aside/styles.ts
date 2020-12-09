@@ -26,15 +26,28 @@ export const MenuContainer = styled.nav `
     margin-top: 50px;
     display: flex;
     flex-direction:column;
-    align-items:flex-start;
 `;
 export const MenuLink = styled.a `
+    display: flex;
+    align-items: center;
     padding-left: 2em;
-    color: ${props => props.theme.colors.white};
+    margin-bottom: 2em;
+    line-height: 2em;
+    width: 100%;
+    height: 2em;
+    border-left: 10px solid;
+    color: ${ props => props.theme.colors.white };
     opacity: .7;
     transition: opacity .3s;
     
     &:hover {
         opacity: 1;
+    }
+
+    > svg {
+        font-size: 1.5em;
+        text-align: center;
+        margin-right: .7em;
+
     }
 `;

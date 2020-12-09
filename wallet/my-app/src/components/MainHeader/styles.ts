@@ -5,12 +5,16 @@ export const Container = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 0 3em;
     background: ${props => (props.theme.colors.secondary)};
 `;
 
 export const Profile = styled.div `
     color: ${props =>(props.theme.colors.white)};
 `;
-export const Welcome = styled.h3 ``;
-export const UserName = styled.span ``;
+export const Welcome = styled.h3 `
+    font-weight: 400;
+`;
+export const UserName = styled.span `
+    color: rgba(255,255,255, .4);
+`;

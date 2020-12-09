@@ -21,7 +21,7 @@ const MainHeader: React.FC = () => {
             <Toggle />
 
             <Profile>
-                <Welcome>Ola, {emoji}</Welcome>
+                <Welcome>Be Welcome, {emoji}</Welcome>
                 <UserName>Adelto Oliveira</UserName>
             </Profile>
         </Container>

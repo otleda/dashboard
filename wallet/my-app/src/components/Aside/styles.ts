@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
+
 export const Container = styled.div `
     grid-area: AS;
     background: #2D3251;
 `;
 
-export const Header = styled.div `
+export const Header = styled.header `
     position: relative;
     display: flex;
     align-items: center;
@@ -13,11 +14,27 @@ export const Header = styled.div `
     height: 70px;
     box-shadow: -1px 2px 10px rgba(0,0,0,.1);
     border-bottom: 1px solid  rgba(0,0,0,.2);
-
-
 `;
+
 export const LogoImg = styled.img`
     position: absolute;
     width: 30%;
     margin: 0 30px;
+`;
+
+export const MenuContainer = styled.nav `
+    margin-top: 50px;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+`;
+export const MenuLink = styled.a `
+    padding-left: 2em;
+    color: ${props => props.theme.colors.white};
+    opacity: .7;
+    transition: opacity .3s;
+    
+    &:hover {
+        opacity: 1;
+    }
 `;

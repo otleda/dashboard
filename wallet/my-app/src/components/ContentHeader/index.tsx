@@ -1,4 +1,6 @@
 import React from 'react';
+import InputSelect from '../InputSelect';
+
 import {
      Container,
      TitleContainer,
@@ -6,6 +8,13 @@ import {
  } from './style';
 
 const ContainerHeader: React.FC = () => {
+
+    const optionsValue = [
+        {value: 'Abril', label: 'Abril'},
+        {value: 'Maio', label: 'Maio'},
+        {value: 'Junho', label: 'Junho'},
+    ]
+
     return (
         <Container>
             <TitleContainer>
@@ -13,8 +22,7 @@ const ContainerHeader: React.FC = () => {
             </TitleContainer>
 
             <Controllers>
-                <button type="button">Button A</button>
-                <button type="button">Button B</button>
+                <InputSelect options = {optionsValue}/>
             </Controllers>
         </Container>
     );

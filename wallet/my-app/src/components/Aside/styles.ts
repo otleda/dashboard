@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+import LogoSvg from '../../assets/logo.svg';
+
+
 
 export const Container = styled.div `
     grid-area: AS;
@@ -16,7 +19,10 @@ export const Header = styled.header `
     border-bottom: 1px solid  rgba(0,0,0,.2);
 `;
 
-export const LogoImg = styled.img`
+export const LogoImg = styled.img.attrs({
+     src: LogoSvg, alt: 'logo Wallet - minha Carteira Virtual'
+     })
+     `
     position: absolute;
     width: 30%;
     margin: 0 30px;

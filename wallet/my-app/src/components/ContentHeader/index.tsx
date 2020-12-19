@@ -1,5 +1,4 @@
 import React from 'react';
-import InputSelect from '../InputSelect';
 
 import {
      Container,
@@ -7,25 +6,27 @@ import {
      Controllers
  } from './style';
 
-const ContainerHeader: React.FC = () => {
+interface IContentHeader {
+    title: string,
+    lineColor: string,
+    children: React.ReactNode
+}
 
-    const optionsValue = [
-        {value: 'Abril', label: 'Abril'},
-        {value: 'Maio', label: 'Maio'},
-        {value: 'Junho', label: 'Junho'},
-    ]
 
+const ContentHeader: React.FC< IContentHeader > = ({title, lineColor, children}) => {
+
+   
     return (
         <Container>
-            <TitleContainer>
-                <h1>title</h1>
+            <TitleContainer colorLiner = {lineColor}>
+                <h1>{title}</h1>
             </TitleContainer>
 
             <Controllers>
-                <InputSelect options = {optionsValue}/>
+                {children}
             </Controllers>
         </Container>
     );
 }
 
-export default ContainerHeader;
+export default ContentHeader;

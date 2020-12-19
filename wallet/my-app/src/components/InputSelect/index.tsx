@@ -1,20 +1,20 @@
 import React from 'react';
 import { Container } from './style';
 
-interface IInputSelectProps {
+interface ISelectInputProps {
     options: {
         value: string | number;
         label: string | number;
     }[]
 }
 
-const InputSelect: React.FC<IInputSelectProps> = ({options}) => {
+const InputSelect: React.FC<ISelectInputProps> = ({options}) => {
     return (
         <Container>
             <select name="" id="">
                 { 
-                    options.map(option => (
-                        <option value = {option.value} > {option.label} </option>
+                    options.map(item => (
+                        <option value = {item.value} > {item.label} </option>
                     ))
                 }
             </select>

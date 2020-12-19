@@ -5,7 +5,12 @@ export const Container = styled.div`
     justify-content: space-between;
     width: 100%;
 `;
-export const TitleContainer = styled.div`
+
+interface ITitleContainerProps {
+    colorLiner : string
+}
+
+export const TitleContainer = styled.div <ITitleContainerProps>`
     > h1 {
         color: ${ props => props.theme.colors.white};
 
@@ -14,11 +19,12 @@ export const TitleContainer = styled.div`
             display: block;
             width: 60%;
             margin-left: 40%;
-            border-bottom: 8px solid ${props => props.theme.colors.success};
+            border-bottom: 8px solid ${props => props.colorLiner};
 
         }
     }
 `;
+
 export const Controllers = styled.div`
     display: flex;
 `;

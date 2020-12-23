@@ -1,5 +1,4 @@
 import React from 'react';
-// import LogoSvg from '../../assets/logo.svg';
 
 import {
     MdDashboard,
@@ -15,7 +14,6 @@ import {
     LogoImg,
     MenuContainer,
     MenuLink
-
 } from './styles';
 
 const Aside: React.FC = () => {

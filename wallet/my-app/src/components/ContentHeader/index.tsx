@@ -14,7 +14,6 @@ interface IContentHeader {
 
 
 const ContentHeader: React.FC< IContentHeader > = ({title, lineColor, children}) => {
-
    
     return (
         <Container>

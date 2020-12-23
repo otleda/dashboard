@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-
 import LogoSvg from '../../assets/logo.svg';
-
 
 
 export const Container = styled.div `
@@ -24,7 +22,7 @@ export const LogoImg = styled.img.attrs({
      })
      `
     position: absolute;
-    width: 30%;
+    width: 28%;
     margin: 0 30px;
 `;
 

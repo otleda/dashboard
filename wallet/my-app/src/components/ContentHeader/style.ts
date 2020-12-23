@@ -4,6 +4,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 2em;
 `;
 
 interface ITitleContainerProps {
@@ -13,13 +14,15 @@ interface ITitleContainerProps {
 export const TitleContainer = styled.div <ITitleContainerProps>`
     > h1 {
         color: ${ props => props.theme.colors.white};
+        font-size: 1.5em;                                                                       
 
         &::after {
             content: '';
             display: block;
             width: 60%;
             margin-left: 40%;
-            border-bottom: 8px solid ${props => props.colorLiner};
+
+            border-bottom: 6px solid ${props => props.colorLiner};
 
         }
     }

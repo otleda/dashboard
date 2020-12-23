@@ -22,55 +22,12 @@ const List: React.FC = () => {
             </ContentHeader>
 
             <Content>
-                <HistoryFinanceCard
-                    cardColor = "#303660"
-                    tagColor = "#4E41F0"
-                    title = "Aluguel"
-                    subtitle = "15/09/2020"
-                    amount = "R$ 700,00"
-                />
-                <HistoryFinanceCard
-                    cardColor = "#303660"
-                    tagColor = "#4E41F0"
-                    title = "Aluguel"
-                    subtitle = "15/09/2020"
-                    amount = "R$ 700,00"
-                />
-                <HistoryFinanceCard
-                    cardColor = "#303660"
-                    tagColor = "#4E41F0"
-                    title = "Aluguel"
-                    subtitle = "15/09/2020"
-                    amount = "R$ 700,00"
-                />
-                <HistoryFinanceCard
-                    cardColor = "#303660"
-                    tagColor = "#4E41F0"
-                    title = "Aluguel"
-                    subtitle = "15/09/2020"
-                    amount = "R$ 700,00"
-                />
-                <HistoryFinanceCard
-                    cardColor = "#303660"
-                    tagColor = "#4E41F0"
-                    title = "Aluguel"
-                    subtitle = "15/09/2020"
-                    amount = "R$ 700,00"
-                />
-                <HistoryFinanceCard
-                    cardColor = "#303660"
-                    tagColor = "#4E41F0"
-                    title = "Aluguel"
-                    subtitle = "15/09/2020"
-                    amount = "R$ 700,00"
-                />
-                <HistoryFinanceCard
-                    cardColor = "#303660"
-                    tagColor = "#4E41F0"
-                    title = "Aluguel"
-                    subtitle = "15/09/2020"
-                    amount = "R$ 700,00"
-                />
+                <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
+                <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
+                <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
+                <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
+                <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
+                <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
             </Content>
         </Container>
     );

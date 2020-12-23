@@ -15,7 +15,7 @@ export const Container = styled.li `
     height: 80px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: ${props =>props.theme.colors.tertiary};
+    background-color: ${props =>props.theme.colors.secondary};
     transition: all .2s;
     opacity: .9;
 

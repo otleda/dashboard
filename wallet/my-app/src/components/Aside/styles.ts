@@ -38,13 +38,14 @@ export const MenuLink = styled.a `
     margin-bottom: 2em;
     width: 100%;
     height: 2em;
-    border-left: 6px solid ;
+    border-left: 6px solid transparent;
     color: ${ props => props.theme.colors.white };
     opacity: .7;
     transition: opacity .3s;
     
     &:hover {
         opacity: 1;
+        border-left: 6px solid ${props => props.theme.colors.onCheked};
     }
 
     > svg {

@@ -17,6 +17,7 @@ import {
 } from './styles';
 
 const Aside: React.FC = () => {
+
     return (
         <Container>
             <Header>

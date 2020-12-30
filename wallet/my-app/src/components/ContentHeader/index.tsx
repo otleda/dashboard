@@ -6,18 +6,17 @@ import {
      Controllers
  } from './style';
 
-interface IContentHeader {
-    title: string,
-    lineColor: string,
-    children: React.ReactNode
-}
+ interface IContentHeaderProps {
+    title: string;
+    lineColor: string;
+    children: React.ReactNode;
+ }
 
+const ContentHeader: React.FC< IContentHeaderProps > = ({title, lineColor, children}) => {
 
-const ContentHeader: React.FC< IContentHeader > = ({title, lineColor, children}) => {
-   
     return (
         <Container>
-            <TitleContainer colorLiner = {lineColor}>
+            <TitleContainer colorLine={lineColor}>
                 <h1>{title}</h1>
             </TitleContainer>
 
@@ -27,5 +26,4 @@ const ContentHeader: React.FC< IContentHeader > = ({title, lineColor, children})
         </Container>
     );
 }
-
 export default ContentHeader;

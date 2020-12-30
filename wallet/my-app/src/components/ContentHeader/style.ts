@@ -1,33 +1,28 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 2em;
-`;
-
-interface ITitleContainerProps {
-    colorLiner : string
+interface ITitleContainerProps{
+    colorLine: string;
 }
 
-export const TitleContainer = styled.div <ITitleContainerProps>`
+export const Container = styled.div`
+    display: flex;                                                                                                                                              
+    justify-content: space-between;
+    width: 100%;
+`;
+export const TitleContainer = styled.div< ITitleContainerProps >`
     > h1 {
         color: ${ props => props.theme.colors.white};
-        font-size: 1.5em;                                                                       
 
         &::after {
             content: '';
             display: block;
             width: 60%;
             margin-left: 40%;
-
-            border-bottom: 6px solid ${props => props.colorLiner};
+            border-bottom: 8px solid ${props => props.colorLine};
 
         }
     }
 `;
-
 export const Controllers = styled.div`
     display: flex;
 `;

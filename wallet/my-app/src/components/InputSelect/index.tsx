@@ -8,13 +8,13 @@ interface ISelectInputProps {
     }[]
 }
 
-const InputSelect: React.FC<ISelectInputProps> = ({options}) => {
+const InputSelect: React.FC <ISelectInputProps> = ({options}) => {
     return (
         <Container>
             <select name="" id="">
                 { 
                     options.map(item => (
-                        <option value = {item.value} > {item.label} </option>
+                        <option key = {item.value} value = {item.value}> {item.label} </option>
                     ))
                 }
             </select>

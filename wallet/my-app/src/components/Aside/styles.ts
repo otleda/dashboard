@@ -36,10 +36,9 @@ export const MenuLink = styled.a `
     align-items: center;
     padding-left: 2em;
     margin-bottom: 2em;
-    line-height: 2em;
     width: 100%;
     height: 2em;
-    border-left: 10px solid;
+    border-left: 6px solid ;
     color: ${ props => props.theme.colors.white };
     opacity: .7;
     transition: opacity .3s;
@@ -52,6 +51,5 @@ export const MenuLink = styled.a `
         font-size: 1.5em;
         text-align: center;
         margin-right: .7em;
-
     }
 `;

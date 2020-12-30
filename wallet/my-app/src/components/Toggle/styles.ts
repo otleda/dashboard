@@ -11,8 +11,8 @@ import  Switch, { ReactSwitchProps } from 'react-switch';
  `;
  export const ToggleSelector = styled(Switch).attrs<ReactSwitchProps>(
      ({ theme }) => ({
-        onColor: theme.colors.onCheked,
-        offColor: theme.colors.offCheked,
+        onColor: theme.colors.darkCheked,
+        offColor: theme.colors.lightCheked,
         activeBoxShadow: false,
         height: 14,
         handleDiameter: 24,

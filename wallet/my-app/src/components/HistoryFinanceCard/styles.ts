@@ -4,7 +4,7 @@ interface ITagProps {
     color: string;
 }
 
-export const Container = styled.li `
+export const Container = styled.li`
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@ export const Container = styled.li `
     height: 80px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: ${props =>props.theme.colors.secondary};
+    background-color: ${props =>props.theme.colors.tertiary};
     transition: all .2s;
     opacity: .9;
 
@@ -28,10 +28,21 @@ export const Container = styled.li `
     > div {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between;   
         padding-left: 1em;
     }
+
+    > div h3 {
+        padding-bottom: .5em;
+    }
+
+    > div small {
+        opacity: .8;
+        font-weight: lighter;
+    }
+
 `;
+
 export const Tag = styled.div< ITagProps > `
     position: absolute;
     width: 15px;

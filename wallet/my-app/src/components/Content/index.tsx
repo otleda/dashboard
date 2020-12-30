@@ -8,5 +8,4 @@ const Content: React.FC = ({ children }) => {
         </Container>
     );
 }
-
 export default Content;

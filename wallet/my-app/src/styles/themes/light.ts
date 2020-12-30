@@ -14,7 +14,9 @@ export default {
          info: '#FFBB68',
          warning: '#FF8081', 
          
-         onCheked: '#F00407',
-         offCheked: '#33F815',
-    },
+         darkCheked: '#F00407',
+         lightCheked: '#33F815',
+
+         onCheked: '#F041B0'
+    }
 };

@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Container, Content, Filters } from './styles';
 
 import ContentHeader from '../../components/ContentHeader';
 import InputSelect from '../../components/InputSelect';
 import HistoryFinanceCard from '../../components/HistoryFinanceCard';
 
+interface IRouteParams {
+    match: {
+        params: {
+            type: string;
+        }
+    }
+}
 
-const List: React.FC = () => {
+const List: React.FC <IRouteParams> = ({ match }) => {
+    const {type} = match.params;
+    const title = useMemo(() => {
+        return type === 'entry-balance' ? 'Entries' : 'Exits'
+    },[type]); 
 
     const months = [
         {value: 4, label: 'Abril'},
@@ -22,9 +33,9 @@ const List: React.FC = () => {
         {value: 2017, label: 2017}
     ];
 
-    return(
+    return (
         <Container>
-            <ContentHeader title = "Exits" lineColor = "#E44C4E">
+            <ContentHeader title={title} lineColor="#E44C4E">
                 <InputSelect options = {months}/>
                 <InputSelect options = {years}/>
             </ContentHeader>
@@ -35,6 +46,7 @@ const List: React.FC = () => {
             </Filters>
 
             <Content>
+                <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
                 <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
                 <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>
                 <HistoryFinanceCard tagColor = "#4E41F0" title = "Aluguel" subtitle = "15/09/2020" amount = "R$ 700,00"/>

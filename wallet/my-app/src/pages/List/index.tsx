@@ -9,10 +9,10 @@ import gains from '../../database/gains';
 import expenses from '../../database/expenses';
 
 interface IRouteParams {
-    match: {
+    match: { 
         params: {
             type: string;
-        }
+        } 
     }
 }
 
@@ -55,7 +55,7 @@ const List: React.FC <IRouteParams> = ({ match }) => {
             }
         })
         setData(response);
-    },[]);
+    },[ listData, data ]);
 
     const months = [
         {value: 4, label: 'Abril'},

@@ -1,20 +1,6 @@
 import React from 'react';
-
-import {
-    MdDashboard,
-    MdAccountBalanceWallet,
-    MdArrowUpward,
-    MdArrowDownward,
-    MdInput,
-} from 'react-icons/md';
-
-import { 
-    Container, 
-    Header,
-    LogoImg,
-    MenuContainer,
-    MenuLink
-} from './styles';
+import { MdDashboard, MdAccountBalanceWallet, MdArrowUpward, MdArrowDownward, MdInput, } from 'react-icons/md';
+import { Container, Header, LogoImg, MenuContainer,MenuLink } from './styles';
 
 const Aside: React.FC = () => {
 
